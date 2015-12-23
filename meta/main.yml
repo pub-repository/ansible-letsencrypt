@@ -1,0 +1,12 @@
+---
+dependencies: []
+
+galaxy_info:
+  min_ansible_version: 1.4
+  platforms:
+  - name: Ubuntu
+    versions:
+    - all
+  - name: Debian
+    versions:
+    - all
