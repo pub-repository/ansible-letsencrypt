@@ -15,7 +15,8 @@
       - git
 
   - name: Install python depends
-    pip: virtualenv="{{ letsencrypt_venv }}" virtualenv_site_packages=no name={{ item }} state=latest
+    # https://docs.ansible.com/ansible/latest/modules/pip_module.html#parameter-state 
+    pip: virtualenv="{{ letsencrypt_venv }}" virtualenv_site_packages=no name={{ item }} state=present
     with_items:
       - setuptools
       - pip
